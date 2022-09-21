@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+body.night {
+  background-color: #2e3440;
+  color: #fff;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.night .task {
+  border-color: #fff;
+}
+
+.night .box {
+  border-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  padding: 30px 0px;
+}
+
+.form__wrapper {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form__input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 4px;
+  font-family: inherit;
+}
+
+.form__btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.box {
+  margin-top: 24px;
+  border-top: 1px solid #333;
+}
+
+.task {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.task--done .task__desc {
+  text-decoration: line-through;
+}
+
+.task--done {
+  background-color: #ccc;
+}
+
+.task__desc {
+  flex-grow: 1;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.task__priority {
+  margin-right: 16px;
+  font-weight: 700;
+}
+
+.task__btn,
+.task__input {
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__body {
+  border-radius: 8px;
+  width: 600px;
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.controllers {
+  display: flex;
+}
+
+.controllers__search {
+  margin-left: auto;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="theme">
+        <button data-type="light" class="theme__btn">Night</button> |
+        <button class="theme__word theme__small">a</button>
+        <button class="theme__word theme__large">A</button>
+        <button class="theme__word theme__reset">Reset</button>
+
+        <select class="theme__lang">
+          <option value="uz">Uz</option>
+          <option value="en">Eng</option>
+        </select>
+      </div>
+      <form class="form">
+        <div class="form__wrapper">
+          <input
+            type="text"
+            placeholder="Type your task..."
+            class="form__input"
+          />
+          <select class="form__select" required>
+            <option value="" selected disabled>Muhimlik</option>
+            <option value="high">Juda muhim</option>
+            <option value="medium">O'rtacha</option>
+            <option value="low">Muhim emas</option>
+          </select>
+          <button class="form__btn">Add</button>
+        </div>
+      </form>
+
+      <div class="controllers">
+        <select class="controllers__select controllers__sort">
+          <option value="" selected disabled>Sort</option>
+          <option value="time">Asl holat</option>
+          <option value="a-z">A->Z</option>
+          <option value="z-a">Z->A</option>
+        </select>
+
+        <select class="controllers__select controllers__filter">
+          <option value="" selected disabled>Filter</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+
+        <input type="search" class="controllers__search" />
+      </div>
+
+      <div class="box">
+        <!-- <div class="task">
+          <input class="task__input" type="checkbox" />
+          <div class="task__desc">Kitob o'qish</div>
+          <button data-type="edit" class="task__btn task__edit">Edit</button>
+          <button data-type="delete" class="task__btn task__delete">
+            Delete
+          </button>
+        </div> -->
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal__body">
+        <input type="text" class="modal__input" />
+
+        <select class="modal__select" required>
+          <option value="high">Juda muhim</option>
+          <option value="medium">O'rtacha</option>
+          <option value="low">Muhim emas</option>
+        </select>
+
+        <button class="modal__button">Save</button>
+      </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/dars.js"></script>
+  </body>
+</html>
